@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Emelly Damulo - CV</title>
+
+<style>
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #eef2ff, #fdf2f8);
+    margin: 0;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+}
+/* CARD */
+.card {
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(10px);
+    padding: 20px;
+    border-radius: 20px;
+    margin: 20px 0;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+    animation: fadeIn 0.5s ease-in;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+.card .card {
+    border-left: 5px solid #e3e3eb;
+}
+/* HEADER */
+.header {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.header img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid #0c0b0d;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 36px;
+    font-weight: bold;
+}
+
+/* GRID */
+.grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+}
+
+/* TITLES */
+h2 {
+    color: #050206;
+}
+
+/* SKILLS */
+.skill {
+    display: inline-block;
+    background: linear-gradient(135deg, #e6e8f5, #c2d7ff);
+    color: rgb(5, 5, 5);
+    padding: 8px 14px;
+    border-radius: 20px;
+    margin: 5px;
+}
+
+/* LINKS */
+.link {
+    display: block;
+    background: #e5e8ee;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 8px 0;
+    text-decoration: none;
+    color: black;
+    transition: 0.3s;
+}
+
+.link:hover {
+    background: #6366f1;
+    color: white;
+}
+
+/* GALLERY */
+.gallery {
+    display: flex;
+    gap: 15px;
+    overflow-x: auto;
+    padding: 10px;
+    background: #d2d3da;
+    color: white;
+}
+
+.gallery img {
+    height: 150px;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.gallery img:hover {
+    transform: scale(1.1) rotate(-2deg);
+}
+
+/* MODAL */
+#modal {
+    display: none;
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(0,0,0,0.8);
+}
+
+#modal img {
+    display: block;
+    margin: auto;
+    max-width: 90%;
+    max-height: 90%;
+    margin-top: 5%;
+}
+
+/* ANIMATION */
+@keyframes fadeIn {
+    from {opacity: 0; transform: translateY(10px);}
+    to {opacity: 1; transform: translateY(0);}
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .grid {
+        grid-template-columns: 1fr;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- HEADER -->
+    <div class="card header">
+        <img src="image/8472d54e-6b89-4843-8c87-62f5c5b3a219.jpg" alt="Profile">
+        <div>
+            <h1>EMELLY DAMULO</h1>
+            <p style="color:#08080a; font-weight:bold;">
+                  IT Student     | Nail Artist💅     | Future System Engineer 💻
+            </p>
+        </div>
+    </div>
+
+    <!-- ABOUT + CONNECT -->
+    <div class="grid">
+
+        <div class="card">
+            <h2>ABOUT</h2>
+            <p>
+              <p>
+I am an aspiring web developer and IT student who enjoys turning ideas into functional and user-friendly systems. 
+I have a creative side as a nail technician, which helps me design with both aesthetics and usability in mind. 
+I am eager to grow in the tech industry, explore new technologies, and build solutions that make everyday tasks easier and more efficient.
+</p>
+            </p>
+        </div>
+
+        <div class="card">
+            <h2>CONNECT</h2>
+            <p>📞 09602804070</p>
+            <p>📧 emelly.damulo@carsu.edu.ph</p>
+            <p>📍P-7 Ampayon Butuan City</p>
+
+            <a href="https://www.facebook.com/emilly.damulo" class="link facebook" target="_blank">🌐 Facebook</a>
+            <a href="https://github.com/emelly-dqt" class="link github" target="_blank">💻 GitHub</a>
+            <a href="https://www.linkedin.com/in/emelly-damulo-5a64653b9/" class="link linkedin" target="_blank">🔗 LinkedIn</a>
+        </div>
+
+    </div>
+
+    <!-- SKILLS -->
+    <div class="card">
+        <h2>SKILLS</h2>
+        <span class="skill">HTML</span>
+        <span class="skill">CSS</span>
+        <span class="skill">JavaScript</span>
+        <span class="skill">C Programming</span>
+        <span class="skill">Java</span>
+        <span class="skill">SQL</span>
+        <span class="skill">GitHub</span>
+        <span class="skill">Resposive Design</span>
+    </div>
+
+    <!-- PROJECTS -->
+    <div class="card">
+        <h2>PROJECTS</h2>
+<p></p>
+        <h3>Bookshop Management System</h3>
+        <p>2024| Database system for managing books and sales.</p>
+
+        <h3>EduTrail</h3>
+        <p>2025| Educational Tracking System for Academic Task & Subject Management</p>
+
+        <h3>NailVision App</h3>
+        <p>2026| AI-powered nail design concept.</p>
+    </div>
+
+    <!-- EXPERIENCE -->
+    <div class="card">
+        <h2>EXPERIENCE</h2>
+
+        <h3>IT Internship</h3>
+        <p>2025 | Gained hands-on experience in software deployment and troubleshooting.</p>
+
+        <h4>Nail Technician</h4>
+        <p>Present| Providing nail services and managing clients.</p>
+
+        <h5>IT Projects</h5>
+        <p>Developed multiple academic systems and applications.</p>
+    </div>
+
+    <!-- EDUCATION -->
+    <div class="card">
+        <h2>EDUCATION</h2>
+
+        <h3>BS Information Technology</h3>
+        <p>Current Student</p>
+
+        <h3>2021| Associate Degree in Hospitality Management</h3>
+    </div>
+    <div class="card">
+    <h2>RECOMMENDATIONS</h2>
+
+    <div class="card" style="background:#d2cfe4;">
+        <p>
+            "Emelly is a dedicated and hardworking student who consistently shows creativity 
+            and strong problem-solving skills in her projects. She demonstrates both technical 
+            ability and a positive attitude toward learning."
+        </p>
+        <strong>— Marchie Aban/Instructor</strong>
+    </div>
+
+    <div class="card" style="background:#d2cfe4;">
+        <p>
+            "She is very detail-oriented and passionate about her work. Her ability to combine 
+            creativity and technical knowledge makes her stand out among her peers."
+        </p>
+        <strong>— Honey Jean Empasis/Client</strong>
+    </div>
+
+</div>
+
+    <!-- GALLERY -->
+    <div class="card">
+        <h2>GALLERY</h2>
+
+        <div class="gallery">
+            <img src="image/5e898292-1444-438f-8b16-764b644bfed0.jpg">
+            <img src="image/7b404818-f629-40a5-ad8e-53ee663b9574.jpg">
+            <img src="image/19b8e735-a78e-4784-a788-05f7aae526f8.jpg">
+            <img src="image/80bfb9e7-e7ba-4051-9664-1d0f69222f2a.jpg">
+            <img src="image/096ebbfb-c6c4-4ef7-974e-74c498b72727.jpg">
+            <img src="image/141e4bce-17d1-4e34-9db7-c22def6b5d15.jpg">
+            <img src="image/7348d84c-7eff-4ff0-b8de-f00df4cbcd3c.jpg">
+            <img src="image/d02d8ee1-1970-4d95-acf8-4f398bf32366.jpg">
+            <img src="image/662023d4-8991-42dc-9bdf-91150769cac5.jpg">
+            <img src="image/87514638-d6c3-4fd9-95d5-0bd5205c15bb.jpg">
+            <img src="image/bea6efbe-6f9f-467c-bec0-a7f72bda6417.jpg">
+            <img src="image/ca059c1c-5c4e-4022-ada0-fffb5d867785.jpg">
+        </div>
+    </div>
+
+</div>
+
+<!-- MODAL -->
+<div id="modal">
+    <img id="modal-img">
+</div>
+
+<script>
+const images = document.querySelectorAll(".gallery img");
+const modal = document.getElementById("modal");
+const modalImg = document.getElementById("modal-img");
+
+images.forEach(img => {
+    img.onclick = () => {
+        modal.style.display = "block";
+        modalImg.src = img.src;
+    }
+});
+
+modal.onclick = () => {
+    modal.style.display = "none";
+};
+</script>
+
+</body>
+</html>
